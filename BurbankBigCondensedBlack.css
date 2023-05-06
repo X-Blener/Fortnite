@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'BurbankBigCondensedBlack';
+    src: url('fonts/BurbankBigCondensedBlack.eot');
+    src: url('fonts/BurbankBigCondensedBlack.eot') format('embedded-opentype'),
+         url('fonts/BurbankBigCondensedBlack.woff2') format('woff2'),
+         url('fonts/BurbankBigCondensedBlack.woff') format('woff'),
+         url('fonts/BurbankBigCondensedBlack.ttf') format('truetype'),
+         url('fonts/BurbankBigCondensedBlack.svg#BurbankBigCondensedBlack') format('svg');
+}

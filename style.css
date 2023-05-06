@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@font-face {
+    font-family: 'BurbankBigCondensedBlack';
+    src: url('fonts/BurbankBigCondensedBlack.eot');
+    src: url('fonts/BurbankBigCondensedBlack.eot') format('embedded-opentype'),
+         url('fonts/BurbankBigCondensedBlack.woff2') format('woff2'),
+         url('fonts/BurbankBigCondensedBlack.woff') format('woff'),
+         url('fonts/BurbankBigCondensedBlack.ttf') format('truetype'),
+         url('fonts/BurbankBigCondensedBlack.svg#BurbankBigCondensedBlack') format('svg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+html{
+    background: radial-gradient(ellipse at center,  rgb(179,220,237) 7%,rgb(41,184,229) 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   
+}
+
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(41,184,229);
+    
+}
+
+nav {
+    width: 60%;
+
+}
+
+
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 32px;
+    transition: .5s;
+    font-family: 'BurbankBigCondensedBlack', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+    transform: scale(1.12);
+
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#topo-fotos {
+    width: 200px;
+    height: auto;
+    transition: .5s;
+    
+}
+
+#topo-fotos:hover {
+    transform: scale(1.12);
+}
+
+#topo {
+    width: 200px;
+    height: auto;
+    transition: .5s;
+}
+
+#topo:hover {
+    transform: scale(1.12);
+}
+
+#banner {
+    background-image: url('https://encurtador.com.br/lmrRX');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+
+}
+
+#banner-contato {
+    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiWjipfG1vSr4wAU7mX1-PoS1ztXjAs4LoJFIvpcXKSKNhv4NytSPyMgOB-N1xmPjYBL6bmfzwDaA9NdROVlG3ObI7ofRv_W3Pq5RmSeHr4JcSze7lwA8MHxzUhQV_qWvWvkEw461ZEEv5NWqNLNlmJdAGmLqSC_8QSTcggo2Luw0SBEZIP916lFtYzQ/s1600/Banner%20Batman%202022%20contato.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 600px;
+
+}
+
+#form-contact {
+    background-color: #fff;
+    width: 400px;
+    height: 200px;
+    margin: 200px;
+}
+
+
+input {
+    background-color: #fff;
+}
+
+.sinopse {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    font-size: 20px;
+    font-family: 'BurbankBigCondensedBlack', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 9px rgba(1, 28, 36, 0.6);
+    text-align: center;
+
+}
+
+.text-sinopse {
+    width: 60%;
+}
+
+.text-sinopse2 {
+    width: 80%;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+#trailer-container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /*background: linear-gradient(to right, rgb(41,184,229) 0%,rgb(18, 123, 172) 10%,rgb(0, 0, 0) 20%,rgb(0, 0, 0) 80%,rgb(18, 123, 172) 90%,rgb(41,184,229) 100%)*/
+
+}
+
+.trailer {
+    width: 100%;
+    height: 500px;
+    display: inline;
+    justify-content: center;
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.7);
+
+}
+
+.section-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.slider {
+    display: block;
+    height: 500px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    background-size: cover;
+
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #fff;
+    bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    z-index: 10;
+    position: absolute;
+    margin: 15px;
+    margin-left: 50px;
+}
+
+.slider label:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    padding: 30px 0 0px 0px;
+}
+
+.button {
+    width: 180px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #d21617;
+    color: #fff;
+    transform: scale(1.04);
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.mod-cards-container {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.mod-content {
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    align-items: center;
+}
+
+
+.card {
+    width: 408px;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    font-size: 40px;
+    font-family: 'BurbankBigCondensedBlack', sans-serif;
+    color: #fff;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.8);
+
+}
+
+.card-1 {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'BurbankBigCondensedBlack', sans-serif;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.8);
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-1:hover {
+    transform: scale(1.02);
+}
+
+.photos {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    background-color: #000;
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.3);
+}
+
+.photos:hover {
+    transform: scale(1.04);
+}
+
+.print1 {
+    background-image: url('https://cdn-0001.qstv.on.epicgames.com/MfCmSYtNGsXilSfBTi/image/screen_comp.jpeg'); 
+}
+
+.print2 {
+    background-image: url('https://cdn-0001.qstv.on.epicgames.com/JdCIYECnKZdlXoXGwU/image/screen_comp.jpeg'); 
+}
+
+.print3 {
+    background-image: url('https://cdn2.unrealengine.com/22comp-arena-tile-1920x1080-1920x1080-2330c3086c17.jpg'); 
+}
+
+.print4 {
+    background-image: url('https://cdn-0001.qstv.on.epicgames.com/vszrUzOqCpmBOElAds/image/screen_comp.jpeg'); 
+}
+
+.print5 {
+    background-image: url('https://cdn-0001.qstv.on.epicgames.com/pDeCUZbkPElIHqYNfJ/image/screen_comp.jpeg'); 
+}
+
+.print6 {
+    background-image: url('https://cdn-0001.qstv.on.epicgames.com/SkxbQTJcfTEhreRFNs/image/screen_comp.jpeg'); 
+}
+
+.print7 {
+    background-image: url('https://static-assets-prod.s3.amazonaws.com/fn/static/creative/8035-1519-2959.jpg'); 
+}
+
+.print8 {
+    background-image: url('https://cdn-0001.qstv.on.epicgames.com/AwTROPDFtBDAIsvSio/image/screen_comp.jpeg'); 
+}
+
+.print9 {
+    background-image: url('https://static-assets-prod.s3.amazonaws.com/fn/static/creative/4590-4493-7113_j.jpg'); 
+}
+
+.banner-1 {
+    background-image: url('https://cdn2.unrealengine.com/fortnite-anakin-skywalker-outfit-1920x1080-2eaab6321313.jpg');
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.3);
+}
+
+.banner-2 {
+    background-image: url('https://cdn2.unrealengine.com/fortnite-padme-amidala-outfit-1920x1080-922703187be4.jpg');
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.3)
+}
+
+.banner-3 {
+    background-image: url('https://cdn2.unrealengine.com/fortnite-501st-trooper-and-212th-battalion-trooper-outfits-1920x1080-0593e78c4f59.jpg');
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.3);
+}
+
+.banner-4 {
+    background-image: url('https://cdn2.unrealengine.com/fortnite-coruscants-pride-wrap-1920x1080-7d3c24ef4f3f.jpg');
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.3);
+}
+
+.banner-5 {
+    background-image: url('https://cdn2.unrealengine.com/fortnite-lightsabers-1900x600-f013f4cb7647.jpg');
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.3);
+}
+
+.banner-6 {
+    background-image: url('https://cdn2.unrealengine.com/fortnite-dc-15-blaster-1900x600-0472ab9067fc.jpg');
+    box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin: 40px 0px 40px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b3dced+7,29b8e5+89 */
+/*background: rgb(179,220,237);*/ /* Old browsers */
+/*background: radial-gradient(ellipse at center,  rgb(179,220,237) 7%,rgb(41,184,229) 89%);*/ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
